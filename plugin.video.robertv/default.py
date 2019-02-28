@@ -23,6 +23,7 @@ YOUTUBE_CHANNEL_ID3 = "UC6lJZ9Ctx1vcmRY9cFEPyww"
 YOUTUBE_CHANNEL_ID4 = "lagranjahumana"
 YOUTUBE_CHANNEL_ID5 = "VMGranmisterio"
 YOUTUBE_CHANNEL_ID6 = "TheZOKEproductions"
+YOUTUBE_CHANNEL_ID7 = "UC2Qh-yEvUJgHUZ8ZCHAkRQA/featured"
 
 
 # Entry point
@@ -79,6 +80,12 @@ def main_list(params):
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID6+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mBITgHrtaALMdcZ4mKzQRi4x5fwlUqumKCKvg=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="ATRAVIESA LO DESCONOCIDO",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID7+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBLZIOo9FY7Z2AQRf3EW26OJhdnHEShi1ePSQ=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )		
 	
 	
 	
