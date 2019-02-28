@@ -82,7 +82,7 @@ def main_list(params):
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="ATRAVIESA LO DESCONOCIDO",
+        title="PYRO FANS",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID7+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mBLZIOo9FY7Z2AQRf3EW26OJhdnHEShi1ePSQ=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )		
