@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.robertv"
+	name="ROBERTV"
+	version="1.0.0"
+	provider-name="Rober Castanon">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">ROBER TV	</summary>
+    <description lang="es">Canal rober tv para KODI.</description>
+    <platform>all</platform>
+    <website>http://www.robercastanon.com</website>
+    <email>robercastanon@gmail.com</email>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+		</assets>
+       </extension>
+</addon>
+
+    <addon id="repository.castasat" name="CASTASAT" version="1.0.0" provider-name="Roberto Castanon">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="CASTASAT">
+            <info compressed="false">https://raw.githubusercontent.com/castaman75/CASTASAT/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/castaman75/CASTASAT/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/castaman75/CASTASAT/master/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repositorio de addons multimedia.</summary>
+            <description>Este repositorio esta dedicado para uso personal. En el se incluyen addons multimedia sin copyright.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
