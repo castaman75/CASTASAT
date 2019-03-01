@@ -23,7 +23,7 @@ YOUTUBE_CHANNEL_ID3 = "UC6lJZ9Ctx1vcmRY9cFEPyww"
 YOUTUBE_CHANNEL_ID4 = "lagranjahumana"
 YOUTUBE_CHANNEL_ID5 = "VMGranmisterio"
 YOUTUBE_CHANNEL_ID6 = "TheZOKEproductions"
-YOUTUBE_CHANNEL_ID7 = "UC2Qh-yEvUJgHUZ8ZCHAkRQA"
+YOUTUBE_CHANNEL_ID7 = "PirofanWeb1"
 
 
 # Entry point
@@ -82,9 +82,9 @@ def main_list(params):
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="PYRO FANS",
+        title="Pirofan pirotecnia",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID7+"/",
-        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBLZIOo9FY7Z2AQRf3EW26OJhdnHEShi1ePSQ=s288-mo-c-c0xffffffff-rj-k-no",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBieI2R7spofUV7c9bemcGbSaCIdjr7cg4alA=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )		
 	
 	
