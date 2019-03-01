@@ -82,7 +82,7 @@ def main_list(params):
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="Pirofan pirotecnia",
+        title="PIROFAN PIROTECNIA",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID7+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mBieI2R7spofUV7c9bemcGbSaCIdjr7cg4alA=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )		
