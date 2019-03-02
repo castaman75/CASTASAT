@@ -28,6 +28,12 @@ YOUTUBE_CHANNEL_ID8 = "UCj0Mcpfdh98SAlyCKJ2DbVw"
 YOUTUBE_CHANNEL_ID9 = "UCqD2Z37jXR7cpasLdH8Tj7g"
 YOUTUBE_CHANNEL_ID10 = "UCvosUrZ7hXpzAyobhfztg4w"
 YOUTUBE_CHANNEL_ID11 = "UC2MXy4PrVCDt9nduHrdPtuQ"
+YOUTUBE_CHANNEL_ID12 = "GrupoZeroInves"
+YOUTUBE_CHANNEL_ID13 = "UCkDF5-NG0jlPwt0PTzgBM2A"
+YOUTUBE_CHANNEL_ID14 = "UCA0AXvVu2kZ4nauMgXs_Naw"
+YOUTUBE_CHANNEL_ID15 = "VocesAnonimas3"
+YOUTUBE_CHANNEL_ID16 = "valentiestaloco"
+YOUTUBE_CHANNEL_ID17 = "UCuz0AziVwPgwcuXXsVp14ng"
 
 
 # Entry point
@@ -113,6 +119,42 @@ def main_list(params):
         title="LATE MOTIV",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID11+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mDXcId39AB_2o7U4-qkgKSqPO-lgbS-T94PCQ=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+	 plugintools.add_item(
+        #action="", 
+        title="GRUPO ZERO INVESTIGACIÓN",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID12+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mAY9ozxcuun_YfSpj_VW4tfT0eNvxelyBrUug=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+	 plugintools.add_item(
+        #action="", 
+        title="CREEPYPASTAS EVERYWHERE",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID13+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDgPVd7GIEqrf5PEN7HwuM0oxCLNLdT01mjfA=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+	 plugintools.add_item(
+        #action="", 
+        title="EL DOQMENTALISTA",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID14+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDqacDhbm_i0hJFRHsN-IF_EliKcgeE__mSTQ=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+	 plugintools.add_item(
+        #action="", 
+        title="VOCES ANÓNIMAS",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID15+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBCsHWmFPYkaTLqN-OcoCLbHhMPtHMMa3UMSA=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="VALENTI ESTÁ LOCO",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID16+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDmZJ6tVgzvj9F28LBJw8mSQPidgM5bEbo-kg=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+	 plugintools.add_item(
+        #action="", 
+        title="BRICOMANIA",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID17+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBRWXrcv0g8dypEQBB3vyjSwECzsSK4uOnA3A=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )		
 	
 	
