@@ -24,6 +24,10 @@ YOUTUBE_CHANNEL_ID4 = "lagranjahumana"
 YOUTUBE_CHANNEL_ID5 = "VMGranmisterio"
 YOUTUBE_CHANNEL_ID6 = "TheZOKEproductions"
 YOUTUBE_CHANNEL_ID7 = "PirofanWeb1"
+YOUTUBE_CHANNEL_ID8 = "UCj0Mcpfdh98SAlyCKJ2DbVw"
+YOUTUBE_CHANNEL_ID9 = "UCqD2Z37jXR7cpasLdH8Tj7g"
+YOUTUBE_CHANNEL_ID10 = "UCvosUrZ7hXpzAyobhfztg4w"
+YOUTUBE_CHANNEL_ID11 = "UC2MXy4PrVCDt9nduHrdPtuQ"
 
 
 # Entry point
@@ -85,6 +89,30 @@ def main_list(params):
         title="PIROFAN PIROTECNIA",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID7+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mBieI2R7spofUV7c9bemcGbSaCIdjr7cg4alA=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="BENDITOS BASTARDOS",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID8+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mAlQyeJSm3JZpZ9I_2ddigsK773k70vJZjktQ=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="EL DESVÁN DE NACHO FERRÓ",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID9+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDZDqMdg3xfEpyJQ8iCIRf-YLKQoVYyL5CJNA=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="LA RESISTENCIA",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID10+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mAmBsMJ1lUp0Vfdf-29F3guVYm9ZpHB2Zy_YQ=s288-mo-c-c0xffffffff-rj-k-no",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="LATE MOTIV",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID11+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDXcId39AB_2o7U4-qkgKSqPO-lgbS-T94PCQ=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )		
 	
 	
