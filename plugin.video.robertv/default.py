@@ -120,25 +120,25 @@ def main_list(params):
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID11+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mDXcId39AB_2o7U4-qkgKSqPO-lgbS-T94PCQ=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
-	plugintools.add_item(
+    plugintools.add_item(
         #action="", 
         title="GRUPO ZERO INVESTIGACIÓN",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID12+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mAY9ozxcuun_YfSpj_VW4tfT0eNvxelyBrUug=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
-	plugintools.add_item(
+    plugintools.add_item(
         #action="", 
         title="CREEPYPASTAS EVERYWHERE",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID13+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mDgPVd7GIEqrf5PEN7HwuM0oxCLNLdT01mjfA=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
-	plugintools.add_item(
+    plugintools.add_item(
         #action="", 
         title="EL DOQMENTALISTA",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID14+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mDqacDhbm_i0hJFRHsN-IF_EliKcgeE__mSTQ=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
-	plugintools.add_item(
+    plugintools.add_item(
         #action="", 
         title="VOCES ANÓNIMAS",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID15+"/",
@@ -150,7 +150,7 @@ def main_list(params):
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID16+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mDmZJ6tVgzvj9F28LBJw8mSQPidgM5bEbo-kg=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
-	plugintools.add_item(
+    plugintools.add_item(
         #action="", 
         title="BRICOMANIA",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID17+"/",
