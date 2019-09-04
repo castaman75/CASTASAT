@@ -69,6 +69,20 @@ class VideoId(object):
         return cls(videoid=pathitems[0])
 
     @classmethod
+    def from_dict(cls, dict_items):
+        """Create a VideoId instance from a dict items"""
+        mediatype = dict_items['mediatype']
+        if mediatype == VideoId.MOVIE:
+            return cls(movieid=dict_items['movieid'])
+        elif mediatype in VideoId.TV_TYPES:
+            return cls(tvshowid=_path_attr_dict(dict_items, 'tvshowid'),
+                       seasonid=_path_attr_dict(dict_items, 'seasonid'),
+                       episodeid=_path_attr_dict(dict_items, 'episodeid'))
+        elif mediatype == VideoId.SUPPLEMENTAL:
+            return cls(supplementalid=dict_items['supplementalid'])
+        raise InvalidVideoId
+
+    @classmethod
     def from_videolist_item(cls, video):
         """Create a VideoId from a video item contained in a
         videolist path response"""
@@ -129,6 +143,24 @@ class VideoId(object):
         """The mediatype this VideoId instance represents.
         Either movie, show, season, episode, supplemental or unspecified"""
         return self._mediatype
+
+    def convert_old_videoid_type(self):
+        """
+        If the data contained in to videoid comes from the previous version
+        of the videoid class (without supplementalid), then convert the class object
+        to the new type of class or else return same class
+        """
+        if len(self._id_values) == 5:
+            videoid_dict = {
+                'mediatype': self._mediatype,
+                'movieid': self._id_values[1],
+                'episodeid': self._id_values[2],
+                'seasonid': self._id_values[3],
+                'tvshowid': self._id_values[4]
+            }
+            return VideoId.from_dict(videoid_dict)
+        else:
+            return self
 
     def to_path(self):
         """Generate a valid pathitems list (['show', tvshowid, ...]) from
@@ -229,6 +261,10 @@ def _get_unicode_kwargs(kwargs):
 
 def _path_attr(pathitems, index):
     return pathitems[index] if len(pathitems) > index else None
+
+
+def _path_attr_dict(pathitems, key):
+    return pathitems[key] if key in pathitems else None
 
 
 def inject_video_id(path_offset, pathitems_arg='pathitems',

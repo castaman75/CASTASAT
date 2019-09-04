@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 import xbmc
 import xbmcplugin
 
+from resources.lib.database.db_utils import (TABLE_MENU_DATA)
 from resources.lib.globals import g
 import resources.lib.common as common
 import resources.lib.api.shakti as api
@@ -39,7 +40,7 @@ class DirectoryBuilder(object):
             common.debug('Performing auto-login for selected profile {}'
                          .format(profile_id))
             api.activate_profile(profile_id)
-            self.home()
+            self.home(None, False)
         else:
             self.profiles()
 
@@ -47,23 +48,23 @@ class DirectoryBuilder(object):
         """Show profiles listing"""
         # pylint: disable=unused-argument
         common.debug('Showing profiles listing')
-        listings.build_profiles_listing(api.profiles())
-        _handle_endofdirectory(False)
+        listings.build_profiles_listing()
+        _handle_endofdirectory(False, False)
 
     @common.time_execution(immediate=False)
-    def home(self, pathitems=None):
+    def home(self, pathitems=None, cache_to_disc=True):
         """Show home listing"""
         # pylint: disable=unused-argument
         common.debug('Showing root video lists')
         listings.build_main_menu_listing(api.root_lists())
-        _handle_endofdirectory(False)
+        _handle_endofdirectory(False, cache_to_disc)
 
     @common.time_execution(immediate=False)
     def video_list(self, pathitems):
         """Show a video list with a listid request"""
         menu_data = g.MAIN_MENU_ITEMS.get(pathitems[1])
         if not menu_data:
-            menu_data = g.PERSISTENT_STORAGE['sub_menus'][pathitems[1]]
+            menu_data = g.LOCAL_DB.get_value(pathitems[1], table=TABLE_MENU_DATA, data_type=dict)
         if g.is_known_menu_context(pathitems[2]):
             list_id = api.list_id_for_type(menu_data['lolomo_contexts'][0])
             listings.build_video_listing(api.video_list(list_id), menu_data)
@@ -78,7 +79,7 @@ class DirectoryBuilder(object):
         """Show a video list with a sorted request"""
         menu_data = g.MAIN_MENU_ITEMS.get(pathitems[1])
         if not menu_data:
-            menu_data = g.PERSISTENT_STORAGE['sub_menus'][pathitems[1]]
+            menu_data = g.LOCAL_DB.get_value(pathitems[1], table=TABLE_MENU_DATA, data_type=dict)
         mainmenu_data = menu_data.copy()
         # If the menu is a sub-menu, we get the parameters of the main menu
         if menu_data.get('main_menu'):
@@ -120,7 +121,7 @@ class DirectoryBuilder(object):
         """Show video lists for a genre"""
         menu_data = g.MAIN_MENU_ITEMS.get(pathitems[1])
         if not menu_data:
-            menu_data = g.PERSISTENT_STORAGE['sub_menus'][pathitems[1]]
+            menu_data = g.LOCAL_DB.get_value(pathitems[1], table=TABLE_MENU_DATA, data_type=dict)
         # pathitems indexes: 0 function name, 1 menu id, 2 optional id
         if len(pathitems) < 3:
             lolomo = api.root_lists()
@@ -199,6 +200,9 @@ def _display_search_results(pathitems, perpetual_range_start, dir_update_listing
         xbmcplugin.endOfDirectory(g.PLUGIN_HANDLE, succeeded=False)
 
 
-def _handle_endofdirectory(dir_update_listing):
+def _handle_endofdirectory(dir_update_listing, cache_to_disc=True):
     # If dir_update_listing=True overwrite the history list, so we can get back to the main page
-    xbmcplugin.endOfDirectory(g.PLUGIN_HANDLE, succeeded=True, updateListing=dir_update_listing)
+    xbmcplugin.endOfDirectory(g.PLUGIN_HANDLE,
+                              succeeded=True,
+                              updateListing=dir_update_listing,
+                              cacheToDisc=cache_to_disc)
