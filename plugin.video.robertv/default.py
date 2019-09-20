@@ -69,7 +69,7 @@ def main_list(params):
     plugintools.add_item(
         #action="", 
         title="LA VIDA MODERNA",
-        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID3+"/videos/",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID3+"/",
         thumbnail="https://yt3.ggpht.com/a-/AAuE7mCJSRIhqT_2_ytQS0JO_wJYHCTYOnFr6vITKA=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )
     plugintools.add_item(
