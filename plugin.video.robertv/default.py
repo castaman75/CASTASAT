@@ -26,7 +26,10 @@ YOUTUBE_CHANNEL_ID6 = "PirofanWeb1"
 YOUTUBE_CHANNEL_ID7 = "mundodesconocido"
 YOUTUBE_CHANNEL_ID8 = "UCxIPSNY9-OEP80AKNPvUC8Q"
 YOUTUBE_CHANNEL_ID9 = "laf1es"
-
+YOUTUBE_CHANNEL_ID10 = "HobbynewsTV"
+YOUTUBE_CHANNEL_ID11 = "UCWcp1Mwm7_bJ-mVoZb8TdkQ"
+YOUTUBE_CHANNEL_ID12 = "Mretaprime"
+YOUTUBE_CHANNEL_ID13 = "UC5hBvytNbuALxppbRJBluyg"
 
 # Entry point
 def run():
@@ -99,6 +102,30 @@ def main_list(params):
         title="SOY MOTOR",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID9+"/",
         thumbnail="https://yt3.ggpht.com/a/AGF-l79cYBEN5SXKECLcP6024xJvaL6RT55MWcBjrA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="HOBBY CONSOLAS",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID10+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l78gFd8V1jhUJcFu2pwe26blJi2n7c91X7I8HA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="TUBER VIEJUNER",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID11+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_49QcJR8rRbUDIXdG_Lqi_8QF0Kxna03l6=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="ETA PRIME",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID12+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_3zrCe1yW7QwCIIUMoqf2KcbJpAL5LbaDWvA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )	
+    plugintools.add_item(
+        #action="", 
+        title="LA LENGUA MODERNA",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID13+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7-I05nAXjD8UfiglDVWqiivrJ6k1wNKw3TWlQ=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )		
 	
 run()

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.robertv"
 	name="ROBERTV"
-	version="1.9.0"
-	provider-name="Rober Castanon Cano">
+	version="2.0.0"
+	provider-name="Rober">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.addon.common" version="2.0.0"/>
@@ -15,8 +15,8 @@
     <summary lang="es">ROBER TV	</summary>
     <description lang="es">Canal rober tv para KODI.</description>
     <platform>all</platform>
-    <website>http://www.robercastanon.com</website>
-    <email>robercastanon@gmail.com</email>
+    <website>www</website>
+    <email>gmail.com</email>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
