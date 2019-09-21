@@ -24,8 +24,8 @@ YOUTUBE_CHANNEL_ID4 = "UCvosUrZ7hXpzAyobhfztg4w"
 YOUTUBE_CHANNEL_ID5 = "UC2MXy4PrVCDt9nduHrdPtuQ"
 YOUTUBE_CHANNEL_ID6 = "PirofanWeb1"
 YOUTUBE_CHANNEL_ID7 = "mundodesconocido"
-YOUTUBE_CHANNEL_ID8 = "VMGranmisterio"
-YOUTUBE_CHANNEL_ID9 = "TheZOKEproductions"
+YOUTUBE_CHANNEL_ID8 = "UCxIPSNY9-OEP80AKNPvUC8Q"
+YOUTUBE_CHANNEL_ID9 = "laf1es"
 
 
 # Entry point
@@ -48,9 +48,9 @@ def main_list(params):
 
     plugintools.add_item( 
         #action="", 
-        title="VIDEOBLOG IKER",
+        title="MILENIO LIVE",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID1+"/",
-        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDeEFY66ZhqzQq4J2v1i7ho473TMZLX3NjUmA=s288-mo-c-c0xffffffff-rj-k-no",
+        thumbnail="https://dl.dropbox.com/s/ducxvg4dfmact2v/milenio.jpg",
         folder=True )
     plugintools.add_item(
         #action="", 
@@ -90,15 +90,15 @@ def main_list(params):
         folder=True )		
     plugintools.add_item(
         #action="", 
-        title="VM GRAN MISTERIO",
-        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID8+"/",
-        thumbnail="https://yt3.ggpht.com/a-/AAuE7mDbRGFljdJmm7CTRHQuxjVmADGUXpxfyMhZbQ=s288-mo-c-c0xffffffff-rj-k-no",
+        title="NADIE SABE NADA",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID8+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_ASa4xVX555wr-yZqGU5abK2z6pdr9UFLJjA=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="ATRAVIESA LO DESCONOCIDO",
+        title="SOY MOTOR",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID9+"/",
-        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBITgHrtaALMdcZ4mKzQRi4x5fwlUqumKCKvg=s288-mo-c-c0xffffffff-rj-k-no",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l79cYBEN5SXKECLcP6024xJvaL6RT55MWcBjrA=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )		
 	
 run()
