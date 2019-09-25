@@ -148,7 +148,7 @@ def main_list(params):
     plugintools.add_item(
         #action="", 
         title="PHI BETA LAMBDA",
-        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID16+"/",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID16+"/",
         thumbnail="https://yt3.ggpht.com/a/AGF-l79G11X7KAKflc4QSHemd4NddDGKeoocidle=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )
     plugintools.add_item(
