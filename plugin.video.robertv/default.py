@@ -25,11 +25,17 @@ YOUTUBE_CHANNEL_ID5 = "UC2MXy4PrVCDt9nduHrdPtuQ"
 YOUTUBE_CHANNEL_ID6 = "PirofanWeb1"
 YOUTUBE_CHANNEL_ID7 = "mundodesconocido"
 YOUTUBE_CHANNEL_ID8 = "UCxIPSNY9-OEP80AKNPvUC8Q"
-YOUTUBE_CHANNEL_ID9 = "laf1es"
+YOUTUBE_CHANNEL_ID9 = "UCica1XyzfrHl8AC5N-qKYvA"
 YOUTUBE_CHANNEL_ID10 = "HobbynewsTV"
 YOUTUBE_CHANNEL_ID11 = "UCWcp1Mwm7_bJ-mVoZb8TdkQ"
 YOUTUBE_CHANNEL_ID12 = "Mretaprime"
 YOUTUBE_CHANNEL_ID13 = "UC5hBvytNbuALxppbRJBluyg"
+YOUTUBE_CHANNEL_ID14 = "albertochicotetv"
+YOUTUBE_CHANNEL_ID15 = "CanalComedyCentral"
+YOUTUBE_CHANNEL_ID16 = "UCFKcIYyLxfQBAD4r0Bq1RfA"
+YOUTUBE_CHANNEL_ID17 = "ElTerrat"
+YOUTUBE_CHANNEL_ID18 = "UCnkjyVyvCg4RItUvSGDZ7_g"
+
 
 # Entry point
 def run():
@@ -99,9 +105,9 @@ def main_list(params):
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="SOY MOTOR",
-        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID9+"/",
-        thumbnail="https://yt3.ggpht.com/a/AGF-l79cYBEN5SXKECLcP6024xJvaL6RT55MWcBjrA=s288-c-k-c0xffffffff-no-rj-mo",
+        title="VODAFONE YU",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID9+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7-OXKZwZtoiOufxQxhHsQY4Ht6TwaDhkd1FrA=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )
     plugintools.add_item(
         #action="", 
@@ -126,6 +132,36 @@ def main_list(params):
         title="LA LENGUA MODERNA",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID13+"/",
         thumbnail="https://yt3.ggpht.com/a/AGF-l7-I05nAXjD8UfiglDVWqiivrJ6k1wNKw3TWlQ=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="CHICOTE TUBE",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID14+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l79eGpi1dHFBEQdK7L-Tswv-BoeTU9EM98uAsw=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="COMEDY CENTRAL",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID15+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l79ySmszdv7SaDBvwdbGyjaPekkfNP2ysahxXw=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )	
+    plugintools.add_item(
+        #action="", 
+        title="PHI BETA LAMBDA",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID16+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l79G11X7KAKflc4QSHemd4NddDGKeoocidle=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="EL TERRAT",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID17+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_zRSNNQLzLG46Foqzw41zjfaZrMZ1VNAB9-w=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )	
+    plugintools.add_item(
+        #action="", 
+        title="EL RINCÓN DE CHINA",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID18+"/",
+        thumbnail="https://dl.dropbox.com/s/rh05a1rrkync3u5/china.jpg",
         folder=True )		
 	
 run()
