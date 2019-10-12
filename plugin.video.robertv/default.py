@@ -35,6 +35,7 @@ YOUTUBE_CHANNEL_ID15 = "CanalComedyCentral"
 YOUTUBE_CHANNEL_ID16 = "UCFKcIYyLxfQBAD4r0Bq1RfA"
 YOUTUBE_CHANNEL_ID17 = "ElTerrat"
 YOUTUBE_CHANNEL_ID18 = "UCnkjyVyvCg4RItUvSGDZ7_g"
+YOUTUBE_CHANNEL_ID19 = "Despelothier"
 
 
 # Entry point
@@ -162,6 +163,12 @@ def main_list(params):
         title="EL RINCÓN DE CHINA",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID18+"/",
         thumbnail="https://dl.dropbox.com/s/rh05a1rrkync3u5/china.jpg",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="DESPELOTHIER",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID19+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_aQsozRUaYIZT9-y6PnY9c3-7p-un0adWhng=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )		
 	
 run()
