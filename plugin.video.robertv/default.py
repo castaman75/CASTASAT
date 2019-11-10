@@ -35,7 +35,7 @@ YOUTUBE_CHANNEL_ID15 = "CanalComedyCentral"
 YOUTUBE_CHANNEL_ID16 = "UCFKcIYyLxfQBAD4r0Bq1RfA"
 YOUTUBE_CHANNEL_ID17 = "ElTerrat"
 YOUTUBE_CHANNEL_ID18 = "UCnkjyVyvCg4RItUvSGDZ7_g"
-YOUTUBE_CHANNEL_ID19 = "Despelothier"
+YOUTUBE_CHANNEL_ID19 = "UC95hFgcA4hzKcOQHiEFX3UA"
 
 
 # Entry point
@@ -166,9 +166,9 @@ def main_list(params):
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="DESPELOTHIER",
-        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID19+"/",
-        thumbnail="https://yt3.ggpht.com/a/AGF-l7_aQsozRUaYIZT9-y6PnY9c3-7p-un0adWhng=s288-c-k-c0xffffffff-no-rj-mo",
+        title="E2WORLD",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID19+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7-lXzpE9IellAdY7dldxYHoqk4aGWP2F3eViA=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )		
 	
 run()
