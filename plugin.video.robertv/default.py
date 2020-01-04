@@ -36,6 +36,7 @@ YOUTUBE_CHANNEL_ID16 = "UCFKcIYyLxfQBAD4r0Bq1RfA"
 YOUTUBE_CHANNEL_ID17 = "ElTerrat"
 YOUTUBE_CHANNEL_ID18 = "UCnkjyVyvCg4RItUvSGDZ7_g"
 YOUTUBE_CHANNEL_ID19 = "UC95hFgcA4hzKcOQHiEFX3UA"
+YOUTUBE_CHANNEL_ID20 = "UCMG0r_g-ppKj2NNYiA9nKDA"
 
 
 # Entry point
@@ -62,6 +63,12 @@ def main_list(params):
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID1+"/",
         thumbnail="https://dl.dropbox.com/s/ducxvg4dfmact2v/milenio.jpg",
         folder=True )
+    plugintools.add_item( 
+        #action="", 
+        title="Riquísimo",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID20+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_y7KIi9uYZNpNhHBNHVXoS9XaqbutX78PKYA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )		
     plugintools.add_item(
         #action="", 
         title="LA VIDA MODERNA",
