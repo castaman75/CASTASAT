@@ -37,6 +37,7 @@ YOUTUBE_CHANNEL_ID17 = "ElTerrat"
 YOUTUBE_CHANNEL_ID18 = "UCnkjyVyvCg4RItUvSGDZ7_g"
 YOUTUBE_CHANNEL_ID19 = "UC95hFgcA4hzKcOQHiEFX3UA"
 YOUTUBE_CHANNEL_ID20 = "UCMG0r_g-ppKj2NNYiA9nKDA"
+YOUTUBE_CHANNEL_ID21 = "UC66STKtBH3HSENKBbq6Ponw"
 
 
 # Entry point
@@ -65,9 +66,15 @@ def main_list(params):
         folder=True )
     plugintools.add_item( 
         #action="", 
-        title="Riquísimo",
+        title="RIQUISIMO",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID20+"/",
         thumbnail="https://yt3.ggpht.com/a/AGF-l7_y7KIi9uYZNpNhHBNHVXoS9XaqbutX78PKYA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item( 
+        #action="", 
+        title="DIY CREATORS LATINO",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID21+"/",
+        thumbnail="https://yt3.ggpht.com/a/AATXAJx7Pw4bmH_qleLkQXR3HTysCZnukDwtasRARw=s100-c-k-c0xffffffff-no-rj-mo",
         folder=True )		
     plugintools.add_item(
         #action="", 
@@ -95,10 +102,16 @@ def main_list(params):
         folder=True )
     plugintools.add_item(
         #action="", 
-        title="PIROFAN PIROTECNIA",
-        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID6+"/",
-        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBieI2R7spofUV7c9bemcGbSaCIdjr7cg4alA=s288-mo-c-c0xffffffff-rj-k-no",
-        folder=True )		
+        title="TUBER VIEJUNER",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID11+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_49QcJR8rRbUDIXdG_Lqi_8QF0Kxna03l6=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="ETA PRIME",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID12+"/",
+        thumbnail="https://yt3.ggpht.com/a/AGF-l7_3zrCe1yW7QwCIIUMoqf2KcbJpAL5LbaDWvA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )				
     plugintools.add_item(
         #action="", 
         title="MUNDO DESCONOCIDO",
@@ -122,18 +135,6 @@ def main_list(params):
         title="HOBBY CONSOLAS",
         url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID10+"/",
         thumbnail="https://yt3.ggpht.com/a/AGF-l78gFd8V1jhUJcFu2pwe26blJi2n7c91X7I8HA=s288-c-k-c0xffffffff-no-rj-mo",
-        folder=True )
-    plugintools.add_item(
-        #action="", 
-        title="TUBER VIEJUNER",
-        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID11+"/",
-        thumbnail="https://yt3.ggpht.com/a/AGF-l7_49QcJR8rRbUDIXdG_Lqi_8QF0Kxna03l6=s288-c-k-c0xffffffff-no-rj-mo",
-        folder=True )
-    plugintools.add_item(
-        #action="", 
-        title="ETA PRIME",
-        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID12+"/",
-        thumbnail="https://yt3.ggpht.com/a/AGF-l7_3zrCe1yW7QwCIIUMoqf2KcbJpAL5LbaDWvA=s288-c-k-c0xffffffff-no-rj-mo",
         folder=True )	
     plugintools.add_item(
         #action="", 
@@ -176,6 +177,12 @@ def main_list(params):
         title="E2WORLD",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID19+"/",
         thumbnail="https://yt3.ggpht.com/a/AGF-l7-lXzpE9IellAdY7dldxYHoqk4aGWP2F3eViA=s288-c-k-c0xffffffff-no-rj-mo",
+        folder=True )
+    plugintools.add_item(
+        #action="", 
+        title="PIROFAN PIROTECNIA",
+        url="plugin://plugin.video.youtube/user/"+YOUTUBE_CHANNEL_ID6+"/",
+        thumbnail="https://yt3.ggpht.com/a-/AAuE7mBieI2R7spofUV7c9bemcGbSaCIdjr7cg4alA=s288-mo-c-c0xffffffff-rj-k-no",
         folder=True )		
 	
 run()

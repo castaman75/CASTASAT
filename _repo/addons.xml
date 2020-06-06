@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.robertv"
 	name="ROBERTV"
-	version="2.4.0"
+	version="2.5.0"
 	provider-name="Rober">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
